@@ -1,10 +1,10 @@
-import WordCounter from "./components/Counter";
+import Counter from "./components/Counter";
 import './App.css';
 
 function App() {
   return (
     <div>
-      <WordCounter />
+      <Counter />
     </div>
   );
 }

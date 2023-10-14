@@ -1,9 +1,9 @@
 import "./style.css"
 import React from 'react';
 
-function WordCounter() {
+function Counter() {
     const [state, setState] = React.useState({
-      wordCount: 0, 
+      finalCount: 0, 
     });
     
     const handleKeyPress = (e) => {
@@ -21,7 +21,7 @@ function WordCounter() {
       }
       
       setState({
-        wordCount: countWords(count),
+        finalCount: countWords(count),
       });
     }
     
@@ -33,10 +33,10 @@ function WordCounter() {
           onChange={handleKeyPress}
         >    
         </textarea>
-        <h4>Word Count: 
-          <span className='num'> {state.wordCount}</span> 
-        </h4>        
+        <h3>Word Count: 
+          <span className='num'> {state.finalCount}</span> 
+        </h3>        
       </div>
     )
   }
-  export default WordCounter;
+  export default Counter;
